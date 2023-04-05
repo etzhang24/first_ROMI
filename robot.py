@@ -12,7 +12,7 @@ class MyRobot(TimedRobot):
         self.left_motor=Spark(0)
         self.right_motor = Spark(1)
         self.drivetrain=DifferentialDrive(self.left_motor,self.right_motor)
-        self.Linefollower = Linefollower
+        self.Linefollower = Linefollower(self.drivetrain)
     def robotPeriodic(self):
         pass
     def autonomousInit(self):
