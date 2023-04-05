@@ -12,3 +12,6 @@ class Drivetrain:
 
         def move(self, forward, rotate):
             self.drivetrain.arcadeDrive(forward,rotate)
+
+        def arcadeDrive(self, forward, rotate):
+            pass

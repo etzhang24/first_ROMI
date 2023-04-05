@@ -1,12 +1,13 @@
-
+from wpilib import TimedRobot,Joystick,Spark
+from wpilib.drive import DifferentialDrive
 from drivetrain import Drivetrain
 from wpilib import DigitalInput
 
 class Linefollower:
-    def __init__(self, drivetrain, forward, rotate):
+    def __init__(self, drivetrain):
         self.left_sensor = DigitalInput(9)
         self.right_sensor = DigitalInput(8)
-
+        self.drivetrain = drivetrain
 
 
     def run(self):
